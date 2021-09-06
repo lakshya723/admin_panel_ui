@@ -1,0 +1,532 @@
+/* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar{
+  position: fixed;
+  height: 100%;
+  width: 100px;
+  background: #233046;
+  
+}
+
+.logo-details{
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.sidebar li:hover{
+    background-color: rgba(84, 86, 112, 0.541);
+}
+
+  .links_name{
+   
+    text-align: center;
+    color: white;
+    font-size: 12px;
+   
+  }
+
+  .profile-pic{
+    margin-top: 12px;
+    border-radius: 50%;
+  }  
+
+  li{
+      margin-top: 13px;
+     margin-bottom: 13px; 
+  }
+ 
+/*==================================================================================================================navigation bar======================== */
+.home-section nav{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 240px);
+  left: 240px;
+  z-index: 100;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+.sidebar.active ~ .home-section nav{
+  left: 60px;
+  width: calc(100% - 60px);
+}
+.home-section nav .sidebar-button{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+nav .sidebar-button i{
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+/* left search box start here */
+
+.home-section nav .left-search-box{
+  display: flex;
+  border: 0;
+  outline: 0;
+  position: relative;
+  height: 50px;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 0px;
+}
+nav .left-search-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  
+  font-size: 13px;
+  padding: 0 0px;
+}
+nav .left-search-box-icon{
+  background-image: url(./icons/searchUser.jpg);
+  background-position-x: 15px;
+  background-position-y: 13px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  text-indent: 45px;
+}
+nav .left-search-box .bx-search{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #2697FF;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+ 
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  transition: all 0.4 ease;
+}
+
+/* Right search box start here */
+.home-section nav .search-box{
+  position: relative;
+  height: 50px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 0px;
+}
+
+nav .search-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  
+  font-size: 13px;
+  padding: 0 15px;
+}
+nav .right-search-box-icon{
+  background-image: url(./icons/search.jpg);
+  background-position-x: 15px;
+  background-position-y: 13px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  text-indent: 30px;
+}
+nav .search-box .bx-search{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #2697FF;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  transition: all 0.4 ease;
+}
+.home-section nav .profile-details{
+  display: flex;
+  align-items: center;
+
+  height: 50px;
+  min-width: 190px;
+  padding: 0 15px 0 2px;
+}
+nav .notification-details img{
+  height: 50px;
+  width: 50px;
+  border-radius: 0px;
+  object-fit: cover;
+}
+nav .notification-details i{
+  font-size: 15px;
+  color: #333;
+}
+nav .notification-details .notification_text{
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 0;
+  white-space: nowrap;
+}
+nav .profile-details img{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+nav .profile-details .admin_name{
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+nav .profile-details i{
+  
+  font-size: 25px;
+  color: #333;
+}
+  /* ==================================================================================this is nav bar */
+  .topnav{
+    background-color:lightgrey;
+    overflow: hidden;
+    margin-left: 150px;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+  
+  
+    color: white;
+  }
+  .wrapper .bottom_nav{
+    width: 100%;
+    background: #f9f9f9;
+    height: 45px;
+    padding: 0 50px;
+  }
+  /* ====================================================================gupta? */
+  .home-section .home-content{
+    position: relative;
+    padding-top: 104px;
+    padding-left: 100px;
+  }
+  
+  bcahvchvckhdvbcksvbdckdsbeafew
+  
+  .home-content .overview-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-bottom: 26px;
+  }
+  .overview-boxes .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 4 - 15px);
+    background: #fff;
+    padding: 15px 14px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+  .overview-boxes .box-topic{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .home-content .box .number{
+    display: inline-block;
+    font-size: 35px;
+    margin-top: -6px;
+    font-weight: 500;
+  }
+  .home-content .box .indicator{
+    display: flex;
+    align-items: center;
+  }
+  .home-content .box .indicator i{
+    height: 20px;
+    width: 20px;
+    background: #8FDACB;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  .box .indicator i.down{
+    background: #e87d88;
+  }
+  .home-content .box .indicator .text{
+    font-size: 12px;
+  }
+  .home-content .box .cart{
+    display: inline-block;
+    font-size: 32px;
+    height: 50px;
+    width: 50px;
+    background: #cce5ff;
+    line-height: 50px;
+    text-align: center;
+    color: #66b0ff;
+    border-radius: 12px;
+    margin: -15px 0 0 6px;
+  }
+  .home-content .box .cart.two{
+     color: #2BD47D;
+     background: #C0F2D8;
+   }
+  .home-content .box .cart.three{
+     color: #ffc233;
+     background: #ffe8b3;
+   }
+  .home-content .box .cart.four{
+     color: #e05260;
+     background: #f7d4d7;
+   }
+  .home-content .total-order{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .home-content .sales-boxes{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 20px; */
+  }
+  
+  
+  /* kdakufiwusvkwbbukvs */
+  
+  
+  
+  
+  
+  
+  /* left box */
+  .home-content .sales-boxes .recent-sales{
+    width: 15%;
+    height: 25%;
+    background: #fff;
+    padding: 20px 30px;
+    margin: 0 20px;
+    border-radius: 0px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .home-content .sales-boxes .sales-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  .sales-boxes .box .title{
+    font-size: 15px;
+    font-weight: 500;
+    /* margin-bottom: 10px; */
+  }
+  .sales-boxes .sales-details li.topic{
+    font-size: 20px;
+    font-weight: 500;
+    
+  }
+  .sales-boxes .sales-details li{
+    list-style: none;
+    margin: 8px 0;
+  }
+  .sales-boxes .sales-details li a{
+    font-size: 18px;
+    color: #333;
+    font-size: 400;
+    text-decoration: none;
+  }
+  .sales-boxes .box .button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .sales-boxes .box .button a{
+    color: #fff;
+    background: #0A2558;
+    padding: 4px 12px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .sales-boxes .box .button a:hover{
+    background:  #0d3073;
+  }
+  
+ 
+  
+  
+  
+  
+  
+  /* Right box */
+  .home-content .sales-boxes .top-sales{
+    width: 100%;
+    background: #fff;
+    padding: 10px 15px;
+    margin: 0 20px 0 0;
+    border-radius: 0px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .sales-boxes .top-sales .title{
+    font-size: 15px;
+    font-weight: 500;
+    
+  
+  
+    /* margin-bottom: 10px; */
+  }
+  .sales-boxes .top-sales  .card{
+    
+   padding: 0px;
+   
+  }
+  .sales-boxes .top-sales  .bottom{
+    font-size: 18px;
+    padding: 10px;
+   
+  }
+  .sales-boxes .top-sales  .hllo{
+    font-size: 10px;
+    padding: 10px;
+   
+  }
+  
+  .sales-boxes .top-sales li{
+    float:left;
+    list-style: none;
+    width:25%;
+    height: 100px;
+    background: #fff;
+    margin :20px 0px 20px 55px; 
+    border:1px solid rgb(206, 206, 206);
+    box-sizing: border-box;
+  }
+  
+  
+  .sales-boxes .top-sales .contaner{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 10px;
+    background: #333;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Responsive Media Query */
+  @media (max-width: 1240px) {
+    .sidebar{
+      width: 60px;
+    }
+    .sidebar.active{
+      width: 220px;
+    }
+    .home-section{
+      width: calc(100% - 60px);
+      left: 60px;
+    }
+    .sidebar.active ~ .home-section{
+      /* width: calc(100% - 220px); */
+      overflow: hidden;
+      left: 220px;
+    }
+    .home-section nav{
+      width: calc(100% - 60px);
+      left: 60px;
+    }
+    .sidebar.active ~ .home-section nav{
+      width: calc(100% - 220px);
+      left: 220px;
+    }
+  }
+  @media (max-width: 1150px) {
+    .home-content .sales-boxes{
+      flex-direction: column;
+    }
+    .home-content .sales-boxes .box{
+      width: 100%;
+      overflow-x: scroll;
+      margin-bottom: 30px;
+    }
+    .home-content .sales-boxes .top-sales{
+      margin: 0;
+    }
+  }
+  @media (max-width: 1000px) {
+    .overview-boxes .box{
+      width: calc(100% / 2 - 15px);
+      margin-bottom: 15px;
+    }
+  }
+  @media (max-width: 700px) {
+    nav .sidebar-button .dashboard,
+    nav .profile-details .admin_name,
+    nav .profile-details i{
+      display: none;
+    }
+    .home-section nav .profile-details{
+      height: 50px;
+      min-width: 40px;
+    }
+    .home-content .sales-boxes .sales-details{
+      width: 560px;
+    }
+  }
+  @media (max-width: 550px) {
+    .overview-boxes .box{
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .sidebar.active ~ .home-section nav .profile-details{
+      display: none;
+    }
+  }
